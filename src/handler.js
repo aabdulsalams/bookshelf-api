@@ -114,7 +114,7 @@ const editBookByIdHandler = (request, h) => {
     name, year, author, summary, publisher, pageCount, readPage, reading,
   } = request.payload;
   const updatedAt = new Date().toISOString();
-  const index = books.findIndex((note) => note.id === id);
+  const index = books.findIndex((book) => book.id === id);
 
   if (index !== -1) {
     if (name === undefined) {
@@ -170,7 +170,7 @@ const editBookByIdHandler = (request, h) => {
 const deleteBookByIdHandler = (request, h) => {
   const { id } = request.params;
 
-  const index = books.findIndex((note) => note.id === id);
+  const index = books.findIndex((book) => book.id === id);
 
   if (index !== -1) {
     books.splice(index, 1);
