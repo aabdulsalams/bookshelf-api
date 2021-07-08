@@ -1,0 +1,24 @@
+{
+  "name": "bookshelf-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aabdulsalams/bookshelf-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aabdulsalams/bookshelf-api/issues"
+  },
+  "homepage": "https://github.com/aabdulsalams/bookshelf-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
